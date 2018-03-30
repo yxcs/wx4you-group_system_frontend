@@ -1,0 +1,86 @@
+.title .add-robot {
+    float: right;
+    margin-top: 10px;
+  }
+  
+  .robot-info .robot-name {
+    position: relative;
+  }
+  .robot-info .edit,
+  .robot-info exit {
+    margin: 0 5px;
+  }
+  .robot-info .avatar-wrapper {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+  }
+  .robot-info .avatar-wrapper .avatar {
+    width: 100%;
+    height: auto;
+  }
+  .robot-info .avatar-wrapper .status {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 1px red;
+    background: red;
+    cursor: pointer;
+  }
+  .robot-info .avatar-wrapper .status.online {
+    background: green;
+    box-shadow: 0 0 4px 1px green;
+    cursor: default;
+  }
+  .robot-info .avatar-wrapper .status.forbidden {
+    background: yellow;
+    box-shadow: 0 0 4px 1px yellow;
+    cursor: default;
+  }
+  
+  .no-robots {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #dbdbdb;
+    border: dashed 1px #cbcbcb;
+    border-radius: 10px;
+  }
+  
+  .img-wrapper.avatar {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border: 1px solid #eee;
+  }
+  .img-wrapper.avatar img {
+    width: 100%;
+    height: 100%;
+  }
+
+.status_online{
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: #13CE66;
+}
+.status_offline {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: #FF4949;
+  cursor: pointer;
+}
+
+.robotDetailHeader {
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}

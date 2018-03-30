@@ -1,0 +1,308 @@
+body,html {
+  height: 100%;
+  width: 100%;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: #333;
+  border-radius: 6px;
+  margin: 6px 28px 16px 0;
+  float: left;
+  text-align: center;
+}
+.logo img {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  margin-top: 3px;
+}
+.ant-layout-sider-trigger {
+  background: #fff;
+}
+.ant-layout-sider-trigger i {
+  color: #222;
+}
+.ant-layout-sider-collapsed li .nav-text {
+  display: none;
+}
+/** 机器人登陆绑定 */
+.title .add-robot {
+  float: right;
+  margin-top: 10px;
+}
+
+.robot-info .robot-name {
+  position: relative;
+}
+.edit, .exit {
+  margin: 0 3px;
+}
+.robot-info .avatar-wrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+.robot-info .avatar-wrapper .avatar {
+  width: 100%;
+  height: auto;
+}
+.robot-info .avatar-wrapper .status {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px 1px red;
+  background: red;
+  cursor: pointer;
+}
+.robot-info .avatar-wrapper .status.online {
+  background: green;
+  box-shadow: 0 0 4px 1px green;
+  cursor: default;
+}
+.robot-info .avatar-wrapper .status.forbidden {
+  background: yellow;
+  box-shadow: 0 0 4px 1px yellow;
+  cursor: default;
+}
+
+.no-robots {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #dbdbdb;
+  border: dashed 1px #cbcbcb;
+  border-radius: 10px;
+}
+
+.img-wrapper.avatar {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+.img-wrapper.avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+/** 登陆状态 */
+.status_online{
+width: 12px;
+height: 12px;
+border-radius: 6px;
+background: #13CE66;
+}
+.status_offline {
+width: 12px;
+height: 12px;
+border-radius: 6px;
+background: #FF4949;
+cursor: pointer;
+}
+
+.robotDetailHeader {
+text-align: center;
+padding: 10px 0;
+font-weight: bold;
+}
+
+.title .add-group {
+  float: right;
+  margin-top: 10px;
+}
+
+.content-main {
+  padding: 10px;
+  min-height: 580px;
+}
+
+.operation .edit,
+.operation .view,
+.operation .delete,
+.operation .link {
+  margin: 0 5px;
+}
+
+
+#loginQdUrl {
+  margin-bottom: 20px;
+  height: 160px;
+  text-align: center;
+  font-size: 0;
+}
+#loginQdUrl img {
+  width: 160px;
+  height: 160px;
+  border: dotted 1px #ccc;
+}
+#loginQdUrl .layer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 160px;
+  font-size: 50px;
+  background: rgba(0,0,0,0.3);
+  color: white;
+}
+#loginQdUrl .layer .tip {
+  margin-top: 32px;
+  font-size: 16px;
+}
+#loginQdUrl .layer .icon {
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+#loginQdUrl .layer.get-uuid {
+  display: none;
+}
+#loginQdUrl .layer.scanned {
+  height: 30px;
+  margin-top: 128px;
+  font-size: 16px;
+}
+#loginQdUrl .layer.scanned::before {
+  content: '请在手机上登陆';
+  line-height: 30px;
+}
+
+.title .add-robot {
+  float: right;
+  margin-top: 10px;
+}
+
+.robot-info .robot-name {
+  position: relative;
+}
+.robot-info .edit,
+.robot-info exit {
+  margin: 0 5px;
+}
+.robot-info .avatar-wrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+.robot-info .avatar-wrapper .avatar {
+  width: 100%;
+  height: auto;
+}
+.robot-info .avatar-wrapper .status {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px 1px red;
+  background: red;
+  cursor: pointer;
+}
+.robot-info .avatar-wrapper .status.online {
+  background: green;
+  box-shadow: 0 0 4px 1px green;
+  cursor: default;
+}
+.robot-info .avatar-wrapper .status.forbidden {
+  background: yellow;
+  box-shadow: 0 0 4px 1px yellow;
+  cursor: default;
+}
+
+.no-robots {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #dbdbdb;
+  border: dashed 1px #cbcbcb;
+  border-radius: 10px;
+}
+
+.img-wrapper.avatar {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+}
+.img-wrapper.avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#sidebar::-webkit-scrollbar{
+  width: 9px;
+  height: 16px;
+  background-color: #f5f5f5;
+}
+/*定义滚动条的轨道，内阴影及圆角*/
+#sidebar::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  border-radius: 20px;
+  background-color: #f1f2f7;
+}
+/*定义滑块，内阴影及圆角*/
+#sidebar::-webkit-scrollbar-thumb{
+  height: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: rgba(0,0,0,0.2);
+}
+
+.loginWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -160px 0 0 -160px;
+  width: 320px;
+  height: 320px;
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.3);
+}
+.title {
+  text-align: center;
+  height: 76px;
+  padding: 18px 0;
+  line-height: 40px;
+  cursor: pointer;
+  color: #fff;
+  background: #108ee9;
+}
+.login-form {
+  padding: 40px;
+}
+.login-form-button {
+  width: 100%;
+}
+.userName {
+  float: right;
+  color: #fff;
+  font-size: 14px;
+}
+.userName span:hover {
+ text-decoration: underline;
+ cursor: pointer;
+}
